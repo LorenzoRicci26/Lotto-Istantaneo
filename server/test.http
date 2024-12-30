@@ -1,0 +1,39 @@
+
+GET http://localhost:3001/api/lottery
+
+# Get all the questions.
+POST http://localhost:3001/api/lottery/submit/1
+content-type: application/json
+
+{
+  "num1": 34,
+  "num2": 32,
+  "num3": 69
+}
+###
+
+# Get the leaderboard
+GET http://localhost:3001/api/lottery/leaderboard
+###
+
+# Get the round of the lottery
+GET http://localhost:3001/api/lottery/round
+###
+
+# Login
+POST http://localhost:3001/api/sessions
+content-type: application/json
+
+{
+  "username": "leino96",
+  "password": "khazix"
+}
+###
+
+## Checking if user is still logged-in.
+GET http://localhost:3001/api/sessions/current
+###
+
+## Execute Log Out.
+DELETE http://localhost:3001/api/sessions/current
+###

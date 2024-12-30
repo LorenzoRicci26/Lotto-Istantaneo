@@ -1,0 +1,363 @@
+html, body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.highlighted-text{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  border-radius: 8px; 
+}
+
+.container-fluid, .background-container {
+  width: 100vw; /* Usa tutta la larghezza disponibile del viewport */
+  height: 100vh; /* Usa tutta l'altezza disponibile del viewport */
+  padding: 0; /* Rimuove padding del Container */
+}
+
+.background-container {
+  background-image: url('/lotteria-promoumana.png'); /* Percorso dell'immagine */
+  background-size: cover; /* Copri l'intera area */
+  background-position: center; /* Centra l'immagine */
+  display: flex;
+  justify-content: center; /* Centro orizzontale */
+  align-items: center; /* Centro verticale */
+  text-align: center; /* Centra il testo */
+}
+  
+  /* Stile per il testo */
+  h1 {
+    font-family: 'Poppins', sans-serif; /* Font carino */
+    font-weight: 700; /* Grassetto */
+    font-size: 3rem; /* Dimensione del font */
+    color: #333; /* Colore del testo */
+  }
+  
+  p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 2rem; 
+    color: #333; 
+  }
+
+  .navbar{
+    background-color: rgb(53, 53, 53);
+  }
+  
+  .navbar-user-info {
+    margin-left: 10px;
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    padding: 5px 10px; 
+    color: black; 
+  }
+  
+  /* Style for the nav buttons to match the Lottery Game brand */
+  .nav-button {
+    font-size: 1.1rem; /* Adjust font size to match brand */
+    padding: 0.5rem 1rem; /* Padding similar to brand */
+    color: white; /* Ensure text is white */
+    text-decoration: none; /* Remove underline */
+  } 
+
+  .nav-button:hover {
+    color: #ddd; /* Slight hover effect */
+  }
+
+  /* Optional: You can also add this for Lottery Game for consistency */
+  .navbar-brand {
+    font-size: 1.1rem; /* Match the button size */
+  }
+
+  /* Font personalizzato per il riquadro delle regole */
+  .custom-font {
+    font-family: 'Roboto', sans-serif; /* Sostituisci 'Roboto' con il font della tua Navbar */
+  }
+
+  /* Stile per il Card delle regole */
+  .card {
+    background-color: #f8f9fa; /* Colore di sfondo chiaro */
+    border: none;
+    border-radius: 15px; /* Arrotonda i bordi del riquadro */
+  }
+
+  /* Stile per il form */
+  form {
+    background-color: #ffffff; /* Sfondo bianco */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  /* Container generale per la pagina */
+  .login-container {
+    display: flex;
+    height: 100vh; /* Altezza piena della pagina */
+    align-items: center; /* Centra verticalmente */
+  }
+
+/* Regole del gioco: lato sinistro */
+.rules-box {
+  border-radius: 15px; /* Bordo stondato */
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombreggiatura */
+  font-family: 'Helvetica, sans-serif'; /* Stile del font */
+}
+
+/* Sovrapposizione per la leggibilità del form */
+.form-overlay {
+  background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco semi-trasparente */
+  padding: 2rem;
+  border-radius: 10px; /* Bordo stondato per il form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombreggiatura */
+  width: 100%;
+  max-width: 500px; /* Dimensione massima del form */
+  
+}
+
+.btn-orange {
+  background-color: #FFA500; /* Colore arancione */
+  color: white; /* Colore del testo */
+  border: none; /* Rimuove il bordo */
+  font-size: 1.12rem; /* Dimensione del testo */
+  border-radius: 5px; /* Angoli arrotondati */
+  transition: background-color 0.3s ease; /* Aggiunge una transizione morbida per il cambiamento di colore */
+}
+
+.btn-orange:hover {
+  background-color: #e69500; /* Colore arancione più scuro al passaggio del mouse */
+}
+
+.background-login {
+  background-image: url('/10287365.png'); 
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center ; 
+  min-height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.card {
+  background-color: transparent; /* Rende lo sfondo della card trasparente */
+  border: none;
+  border-radius: 15px; /* Arrotonda i bordi del riquadro */
+  box-shadow: none; /* Rimuove ombre dal card */
+  margin-left: 20%;
+}
+.grid-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-outlet{
+  width: 100%;
+}
+
+/* ESTRAZIONE */
+
+.row-background {
+  background-color: white; /* Sfondo bianco */
+  padding: 20px; /* Spaziatura interna */
+  border-radius: 15px; /* Bordi arrotondati per un effetto più morbido */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ombra per il rilievo */
+  text-align: center; /* Centra il contenuto */
+  max-width: 600px; /* Imposta una larghezza massima per il contenitore */
+  margin: 0 auto; /* Centra orizzontalmente la Row */
+}
+
+.centered-content {
+  position: absolute; /* Posiziona il contenuto in maniera assoluta */
+  top: 50%; /* Posiziona il contenuto verticalmente al 50% */
+  left: 50%; /* Posiziona il contenuto orizzontalmente al 50% */
+  transform: translate(-50%, -50%); /* Centra esattamente sia orizzontalmente che verticalmente */
+  text-align: center; /* Centra il testo */
+}
+
+.lottery-betSubmitted1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: black; /* Colore del testo nero */
+  font-weight: bold; /* Grassetto */
+  margin: 0 10px; /* Spaziatura tra i numeri */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Effetto rilievo */
+}
+
+.lottery-betSubmitted2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: black; /* Colore del testo nero */
+  font-weight: bold; /* Grassetto */
+  margin: 0 5%; /* Spaziatura tra i numeri */
+  margin-top: 5%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Effetto rilievo */
+}
+
+.selected-numbers {
+  display: flex;
+  justify-content: center; /* Centra i numeri orizzontalmente */
+  margin-top: 1rem; /* Aggiungi uno spazio tra la scritta e i numeri */
+}
+
+.selected-numbers .number {
+  font-size: 1.5rem; /* Dimensione del font per i numeri */
+  color: black; /* Colore del testo nero */
+  font-weight: bold; /* Grassetto */
+  margin: 0 10px; /* Spaziatura tra i numeri */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Effetto rilievo */
+}
+
+/* CSS BOTTONI /GAME */
+
+/* Stile di base per i bottoni delle palline */
+.lottery-ball {
+  background: linear-gradient(145deg, #e0e0e0, #c2c2c2); /* Gradiente accentuato */
+  color: rgb(50, 50, 50); 
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black; 
+  font-size: 1.2rem; 
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.6); /* Ombra per effetto rilievo */
+  margin: 0 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; /* Transizione per effetti animati */
+}
+
+.lottery-ball:hover {
+  background: linear-gradient(145deg, #c2c2c2, #e0e0e0); /* Gradiente invertito al passaggio del mouse */
+  transform: translateY(-4px); /* Solleva la pallina quando il mouse è sopra */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.6); /* Aumenta l'ombra quando è hoverata */
+  cursor: pointer;
+}
+
+.lottery-ball.active {
+  background: rgb(0, 184, 0); /* Colore verde quando il bottone è selezionato */
+  color: white; /* Colore del testo bianco per contrastare con il verde */
+  transform: translateY(0); /* Mantiene la pallina a livello normale */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.6); /* Ombra ridotta */
+}
+
+.custom-progress-bar {
+  height: 10%;
+  margin-left: 21%;
+  margin-right: 20%;
+}
+
+.custom-progress-bar .progress-bar {
+  line-height: 100%; 
+  font-size: 18px;
+}
+
+.background-lottery-game{
+  background-image: url('/10287365.png');
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+}
+
+.submit-button{
+  width: 8%; 
+  text-align: center; /* Allinea il testo al centro */
+  background-color: #ff6347; /* Colore acceso (arancione acceso) */
+  color: white; /* Colore del testo */
+  border: none; /* Rimuovi il bordo */
+  border-radius: 30px; /* Bordi arrotondati */
+  padding: 10px 20px; /* Aggiungi un po' di padding */
+  transition: background-color 0.3s ease; /* Transizione morbida per il colore */
+}
+
+.submit-button:active {
+  background-color: #ff4500; /* Colore più scuro quando viene premuto */
+}
+
+/* Cambia colore al passaggio del mouse */
+.submit-button:hover {
+  background-color: #ff7f50; /* Colore più chiaro al passaggio del mouse */
+  cursor: pointer;
+}
+
+/* Cambia colore quando il bottone è disabilitato */
+.submit-button:disabled {
+  background-color: #cccccc; /* Colore grigio per il bottone disabilitato */
+  cursor: not-allowed; /* Mostra il cursore "non consentito" */
+}
+
+/* PODIO */
+
+.podium-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.podium-rank {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+
+.podium-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.podium-first .podium-box {
+  height: 150px;
+  font-size: 1.4rem;
+  background-color: gold;
+}
+
+.podium-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.podium-second .podium-box {
+  height: 120px;
+  background-color: silver;
+}
+
+.podium-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.podium-third .podium-box {
+  height: 100px;
+  background-color: #cd7f32; /* Bronzo */
+}
+
+.podium-score {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.nevio-filippo{
+  background-image: url('/10287365.png');
+  background-size: cover; /* Copre l'intera area del contenitore */
+  background-position: center; /* Posiziona l'immagine al centro */
+  background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+  width: 100%;
+  height: 100vh; /* Imposta l'altezza dell'immagine a 100% dell'altezza della finestra */
+
+}
